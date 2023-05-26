@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p>Please take part in the survey</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Enter Your Nickname:
+          <input
+            placeholder="nickname"
+            id="name"
+            name="nickname"
+            type="text"
+            required
+        /></label>
+        <label id="email-label" for="email"
+          >Enter Your Email:
+          <input
+            placeholder="e-mail"
+            id="email"
+            name="email"
+            type="email"
+            required
+        /></label>
+        <label id="number-label" for="number"
+          >Input your age (years, optional):
+          <input
+            placeholder="your age"
+            id="number"
+            type="number"
+            name="age"
+            min="13"
+            max="120"
+        /></label>
+        <label for="male"
+          ><input
+            id="male"
+            value="male"
+            type="radio"
+            name="account-type"
+            class="inline"
+          />
+          Male</label
+        >
+        <label for="female"
+          ><input
+            id="female"
+            value="female"
+            type="radio"
+            name="account-type"
+            class="inline"
+          />
+          Female</label
+        >
+      </fieldset>
+      <fieldset>
+        <p id="description">What rank do you rate my HTML+CSS skills?</p>
+        <label for="junior"
+          ><input
+            id="junior"
+            value="junior"
+            type="radio"
+            name="myrank"
+            class="inline"
+            checked
+          />
+          Junior</label
+        >
+        <label for="juniorplus">
+          <input
+            id="juniorplus"
+            value="juniorplus"
+            type="radio"
+            name="myrank"
+            class="inline"
+          />
+          Junior+</label
+        >
+        <label for="middle">
+          <input
+            id="middle"
+            value="middle"
+            type="radio"
+            name="myrank"
+            class="inline"
+          />
+          Middle</label
+        >
+        <label for="senior">
+          <input
+            id="senior"
+            value="senior"
+            type="radio"
+            name="myrank"
+            class="inline"
+          />
+          Senior</label
+        >
+        <label for="dropdown"
+          >How many points do you rate my skills?
+          <select id="dropdown" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="4">5</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>In what direction are you working? (you can select several)</p>
+        <label for="front">
+          <input
+            id="front"
+            value="front"
+            type="checkbox"
+            required
+            name="front"
+            class="inline"
+          />Front-end</label
+        >
+        <label for="back">
+          <input
+            id="back"
+            value="back"
+            type="checkbox"
+            required
+            name="front"
+            class="inline"
+          />Back-end</label
+        >
+        <label for="student">
+          <input
+            id="student"
+            value="student"
+            type="checkbox"
+            required
+            name="front"
+            class="inline"
+          />Student</label
+        >
+        <label for="other">
+          <input
+            id="other"
+            value="other"
+            type="checkbox"
+            required
+            name="front"
+            class="inline"
+          />Other</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="rec"
+          >Would you recommend me as a developer?
+          <select id="rec" name="recom">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </label>
+        <label for="comment"
+          >If you want, leave a comment:
+          <textarea
+            id="comment"
+            name="comment"
+            rows="3"
+            cols="30"
+            placeholder="I love you tazalov..."
+          ></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
